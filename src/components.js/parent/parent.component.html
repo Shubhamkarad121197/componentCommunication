@@ -2,4 +2,8 @@
 <app-child  [name]="userName"  (messageEvent)="sendMessage($event)"></app-child>
 
 <div>In Parent Componet</div>
-<h2>{{message}}</h2>
+<h2 appChangeBgColor>{{message}}</h2>
+<p appChangeBgColor>Highlighted Text</p>
+
+
+
