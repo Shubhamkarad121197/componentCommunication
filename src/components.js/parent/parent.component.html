@@ -1,2 +1,5 @@
 <p>parent works!</p>
-<app-child  [name]="userName"></app-child>
+<app-child  [name]="userName"  (messageEvent)="sendMessage($event)"></app-child>
+
+<div>In Parent Componet</div>
+<h2>{{message}}</h2>

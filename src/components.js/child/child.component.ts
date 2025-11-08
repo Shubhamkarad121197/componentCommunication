@@ -9,12 +9,17 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
    @Input() name: any;
+   @Output() messageEvent=new EventEmitter<string>()
 
    
   ngOnInit() {
     console.log(this.name)
   }
  
+
+  sendMessage(){
+    this.messageEvent.emit('Hello I am button From child and render in Parent component')
+  }
 
 
 
